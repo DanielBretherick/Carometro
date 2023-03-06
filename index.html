@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Carometro</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Carômetro</h1>
+        <section class="eventSetting">
+            <form class="eventForm" >
+                <input type="text" name="eventLocal" placeholder="Local do Evento">
+                <input type="date" name="dateEvent">
+                <input type="datetime" name="timeEvent" placeholder="Hora">
+                <button type="submit">Att</button>
+            </form>
+        </section>
+        <section class="cards"></section>
+        <section>
+            <select name="select" form="eventForm">
+                <option value="CFG Ativa">CFG Ativa</option>
+                <option value="CFG Reserva" selected>CFG Reserva</option>
+                <option value="CG">CG</option>
+            </select>
+            <button id="btn" onClick()>Filter</button>
+        </section>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
